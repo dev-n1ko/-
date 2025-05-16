@@ -10,6 +10,9 @@
         mv 元の名前 新しい名前
     削除　
         rm -rf [ディレクトリ削除(r:リカーシブ(子供も完全削除)f:フォース(重要なファイルも強制削除))]
+    作成
+        mkdir hoge
+        hogeのディレクトリをカレントディレクトリに作成する
 
 -メソッド-
     find
@@ -37,6 +40,9 @@
     save
         変数を使用して編集したデータをデータベースに反映させる
         tmp.save
+    cat
+        ファイルの中身をターミナルに表示する
+        cat README.md
 
 -git-
         変更履歴を保管するアプリ
@@ -51,9 +57,10 @@
     branch
         作業エリアのようなもの。作業エリアを分けることで共同作業時に
         干渉しなくなる。
-        
+
     リポジトリ作成後の初期設定
         echo "# -" >> README.md
+            READMEファイルをカレントディレクトリに追加する
         git init
         git add README.md
             readmeファイルをcommit対象に指定
@@ -65,7 +72,10 @@
             githubとリンクさせる
         git push -u origin main
             ローカルからリモートへpush
-
+    2回目以降
+        git add README.md
+        git commit -m "first commit"
+        git push -u origin main
 
 -エラー-
     undefined local variable or method 
