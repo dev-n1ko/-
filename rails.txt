@@ -1,0 +1,86 @@
+-ディレクトリ-
+        ../ 親ディレクトリ
+        ./  カレントディレクトリ
+        . 　すべて
+    ディレクトリ移動　
+        cd ~ [ホームディレクトリへ移動]
+    ファイルの移動 
+        mv 移動前相対パス 移動先相対パス
+    ファイルの改名 
+        mv 元の名前 新しい名前
+    削除　
+        rm -rf [ディレクトリ削除(r:リカーシブ(子供も完全削除)f:フォース(重要なファイルも強制削除))]
+
+-メソッド-
+    find
+        主キーで1レコードを検索し、見つかったレコードを返す
+        User.find(1)
+    find_by
+        条件に一致する1レコードを返す
+        User.find_by(name:'Ganmo')
+    where
+        条件に一致する複数のレコードを返す
+        User.where(age:20)
+            whereの結果が複数の場合は、配列に格納されているので要素番号で指定して
+            変数に格納して使用する
+    all
+        データベースのすべてのデータを出力する
+        User.all
+    size
+        データベースの行数を返す
+        User.all.size
+    編集
+        変数に検索結果を代入する。
+        変数のキーに変更したい内容を代入する
+        tmp.name="スタック"
+            @付きの変数は特殊のためコンソールではあまり使わない
+    save
+        変数を使用して編集したデータをデータベースに反映させる
+        tmp.save
+
+-git-
+        変更履歴を保管するアプリ
+    リポジトリ
+        アプリの変更履歴を保管する場所
+    commit
+        ローカルリポジトリへの保存
+    push
+        ローカルからリモートリポジトリへのコピー
+    pull
+        ローカルにない変更事項をリモートからローカルに保存
+    branch
+        作業エリアのようなもの。作業エリアを分けることで共同作業時に
+        干渉しなくなる。
+        
+    リポジトリ作成後の初期設定
+        echo "# -" >> README.md
+        git init
+        git add README.md
+            readmeファイルをcommit対象に指定
+        git commit -m "first commit"
+            commit名をつける
+        git branch -M main
+            commit先のbranchを指定する
+        git remote add origin https://github.com/dev-n1ko/-.git
+            githubとリンクさせる
+        git push -u origin main
+            ローカルからリモートへpush
+
+
+-エラー-
+    undefined local variable or method 
+        変数orメソッドが未定義の時に出てくるエラー
+    Did　you　mean?
+        で正しそうな単語を表示してくれる
+
+-メモ-
+rails s サーバー起動
+rails c コンソール起動
+quit consoleから抜けるコマンド
+.gitignore commit対象の指定用ファイル
+
+入力したワードがfind_byのメソッドに組み込まれるようにして
+検索可能辞書とする
+むしろ一覧と検索ページを分けて、検索ページでは検索ウィンドウと結果ウィンドウのみにする。
+
+リダイレクトの戻るボタン作る
