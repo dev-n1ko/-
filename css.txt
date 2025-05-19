@@ -1,0 +1,43 @@
+【css】
+
+-書く場所-
+    1.htmlファイルにstyleタグを入れて書く
+    2.pタグのstyleを指定する
+    3.cssファイルを作ってhtmlのheadで読み込む
+
+    3が使われることが多い。
+
+-head in html-
+    <link rel="stylesheet" href="./style.css">
+
+-css top-
+    @charset "utf-8";
+
+-書き方-
+    セレクター、プロパティ、プロパティの値で構成される
+    書き終わりに「;」つけ忘れないように
+    p{
+        color:red;
+    }
+
+-コメント-
+    /* */
+    (ctrl+/)
+
+-プロパティ-
+    margin(間隔) margin-top/bottom/left/right
+    color(色)
+    background-color(背景色)
+    font-weight(太さ) normal(デフォルト)/bold(太)
+    font-size(大きさ)
+    width(横幅)
+    height(高さ)
+    line-height(行間)
+
+-値(単位)-
+    px
+    %
+
+cssファイルをページごとに分けてhtmlにそれぞれ読ませても、ほかのページに影響が出る
+cssは１ファイルでやるべき？
+htmlの属性もう少し活用すべきか。。。
