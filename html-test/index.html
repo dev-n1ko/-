@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="text text text">
+</head>
+
+<!-- head関係は「html:5」で出すことが可能。descriptionのみ手打ち -->
+
+<body>
+
+<header>
+    <ul>
+        <li>
+            <a href="#link">画像にリンクを付ける</a>
+        </li>
+        <li>
+            <a href="#br">改行</a>
+        </li>
+        <li>
+            <a href="#b">強調</a>
+        </li>
+    </ul>
+
+</header>
+
+
+
+<section id="link">
+    <a href="https://www.tullys.co.jp/">
+        <p>
+            <img src="\Users\二口　雪音\勉強メモ\html-test\海賊.png" alt="タリーズ画像">
+        </p>
+    </a>
+
+    <!-- srcで画像のアドレスを指定。altは代替テキストの役割。 -->
+</section>
+
+<div>
+    <img src="\Users\二口　雪音\勉強メモ\html-test\海賊.png" alt="タリーズ画像">
+</div>
+
+<div>
+    <img src="\Users\二口　雪音\勉強メモ\html-test\海賊.png" alt="タリーズ画像">
+</div>
+
+<div>
+    <img src="\Users\二口　雪音\勉強メモ\html-test\海賊.png" alt="タリーズ画像">
+</div>
+
+<!-- 自動的に当たっているcssがあってその影響でpもdivもブロックレベル判定になっている。 -->
+
+<section id="br">
+    <p>
+    aaa
+    <br>
+     iii
+    aaa
+    </p>
+
+    <!-- brは改行の役割をもつ。改行しない場合、画面の大きさに合わせて自動改行される。  -->
+</section>
+
+
+<section id="b">
+    <p>
+        <b>
+            iii
+        </b>
+        <br>
+        <strong>
+            ああああ
+        </strong>
+    </p>
+
+<!-- bタグとstrongはどちらも見た目上は太字にする効果だが
+ ・bは文字を太字にする
+ ・strongは強調するという意味を持つ
+ 
+ 基本的に強調したい部分にstrongタグを使用し、太字だけの場合はcssで設定するほうがよい？-->
+
+</section>
+
+
+
+</body>
+</html>

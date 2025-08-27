@@ -88,6 +88,8 @@ rails s サーバー起動
 rails c コンソール起動
 quit consoleから抜けるコマンド
 .gitignore commit対象の指定用ファイル
+private
+    consoleに書くことができ、外部からの呼び出しの対象外にできる
 
 入力したワードがfind_byのメソッドに組み込まれるようにして
 検索可能辞書とする
